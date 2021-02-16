@@ -4,6 +4,10 @@
 
 To correctly get everything working, first you will need an API_KEY supplied through env variables. Create a `.env` file and add your API_KEY. See `.env.sample` for an example. Then simply run `yarn` to install any dependencies and `yarn dev` to serve up the project.
 
+### Deployment
+
+The project is deployed using netlify's automatic build process and uses my API_KEY. If you want to see a live version head over to [https://confident-archimedes-79a8c6.netlify.app/](https://confident-archimedes-79a8c6.netlify.app/)
+
 ## Commands
 
 ### Install
@@ -25,6 +29,13 @@ yarn dev
 ```bash
 # runs jest tests
 yarn test
+```
+
+### Build
+
+```bash
+# uses webpack to production build the app
+yarn build
 ```
 
 ### Other

@@ -16,6 +16,8 @@ export const Shortener: React.FC<{
   const [data, setData] = React.useState({ url: "", slug: "" });
 
   const onSubmit = React.useCallback(async () => {
+    if (!data.url) return;
+
     try {
       await createLink(data);
       setData({ url: "", slug: "" });
